@@ -967,7 +967,7 @@ class RecommenderXBlock(HelperXBlock):
         )
         frag.add_css_url("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css")
         frag.add_javascript_url("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js")
-        frag.add_javascript_url('//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js')
+        frag.add_javascript(self.resource_string('static/js/src/mustache.min.js'))
         frag.add_javascript_url('//cdnjs.cloudflare.com/ajax/libs/intro.js/0.5.0/intro.min.js')
         frag.add_css(self.resource_string("static/css/tooltipster.css"))
         frag.add_css(self.resource_string("static/css/recommender.css"))
